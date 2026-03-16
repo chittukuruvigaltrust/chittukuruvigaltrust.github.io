@@ -427,10 +427,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #home h2 {
-  color: #fff;
+    font-family: "Open Sans", sans-serif;   font-size: 48px;
+    font-weight: 700;
+  color: white;
   margin-bottom: 20px;
-  font-size: 48px;
-  font-weight: 700;
 }
 
 #home p {
