@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "Improve Infrastructure",
+    "icon": "ri-building-line"
+  },
+  {
+    "id": 2,
+    "title": "Cultural development programs",
+    "icon": "ri-community-line"
+  },
+  {
+    "id": 3,
+    "title": "Food donation, Relief funds support",
+    "icon": "ri-hand-coin-line"
+  },
+  {
+    "id": 4,
+    "title": "Save ponds,lakes",
+    "icon": "ri-drop-line"
+  },
+  {
+    "id": 5,
+    "title": "Cleanliness program",
+    "icon": "ri-brush-4-line"
+  },
+  {
+    "id": 6,
+    "title": "Environmental trips / trekking / Bird watching",
+    "icon": "ri-eye-line"
+  }
+]

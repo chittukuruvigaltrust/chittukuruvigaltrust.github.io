@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "type": "school",
+    "title": "School",
+    "imageUrl": "assets/img/works/4.jpg"
+  },
+  {
+    "id": 2,
+    "type": "school",
+    "title": "School",
+    "imageUrl": "assets/img/works/5.jpg"
+  },
+  {
+    "id": 3,
+    "type": "school",
+    "title": "School",
+    "imageUrl": "assets/img/works/6.jpg"
+  },
+  {
+    "id": 4,
+    "type": "school",
+    "title": "School",
+    "imageUrl": "assets/img/works/7.jpg"
+  },
+  {
+    "id": 5,
+    "type": "school",
+    "title": "School",
+    "imageUrl": "assets/img/works/8.jpg"
+  },
+  {
+    "id": 6,
+    "type": "public",
+    "title": "Public",
+    "imageUrl": "assets/img/works/1.png"
+  },
+  {
+    "id": 7,
+    "type": "public",
+    "title": "Public",
+    "imageUrl": "assets/img/works/2.jpg"
+  },
+  {
+    "id": 8,
+    "type": "public",
+    "title": "Public",
+    "imageUrl": "assets/img/works/3.png"
+  },
+  {
+    "id": 9,
+    "type": "school",
+    "title": "School",
+    "imageUrl": "assets/img/works/9.png"
+  }
+]

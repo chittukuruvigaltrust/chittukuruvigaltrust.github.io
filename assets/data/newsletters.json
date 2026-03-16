@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "imageUrl": "assets/img/newsletter/2.png",
+    "link": "https://drive.google.com/file/d/1WLDLXod9w9MTLorRWbWBZbrkiYa4ZYLC/view?usp=sharing"
+  },
+  {
+    "id": 2,
+    "imageUrl": "assets/img/newsletter/1.png",
+    "link": "https://drive.google.com/file/d/1OxwPJdRpylJTszlmbdwMsdKpI-a6vZkx/view?usp=sharing"
+  },
+  {
+    "id": 3,
+    "imageUrl": "assets/img/newsletter/3.png",
+    "link": "https://drive.google.com/file/d/1Nt6FTMPc7_DzvSCrZAY1aerAA58wmvi6/view?usp=sharing"
+  },
+  {
+    "id": 4,
+    "imageUrl": "assets/img/newsletter/4.png",
+    "link": "https://drive.google.com/file/d/1MFcwrMrTMXyznLNARgZO0LLRsuIipfo-/view?usp=sharing"
+  }
+]
