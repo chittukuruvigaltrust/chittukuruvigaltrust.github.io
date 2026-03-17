@@ -51,10 +51,11 @@
       <div class="container-fluid">
         <div class="row justify-content-center">
           <div class="col-xl-10 d-flex align-items-center justify-content-end">
-            <h1 class="logo mr-auto ">
+            <h1 class="logo mr-auto d-block d-lg-none">
               <a href="index.html" class="logo mr-auto"><img src="assets/img/logo-bg.png" alt="Sparrow Trust India"
-                  class="img-fluid" /><span class="brand-name">Sparrow Trust India</span></a>
+                  class="img-fluid" /></a>
             </h1>
+
 
             <nav class="nav-menu d-none d-lg-block">
               <ul>
@@ -112,7 +113,7 @@
                   Reach us for more details...!
 
                 </p>
-                <a href="#about" class="btn-get-started animated fadeInUp scrollto">Get Started</a>
+                <a href="#heatmap" class="btn-get-started animated fadeInUp scrollto">Get Started</a>
               </div>
             </div>
           </div>
@@ -122,12 +123,51 @@
     <!-- End Home -->
 
     <main id="main">
+
+
+      <!-- ======= Heatmap Section ======= -->
+      <section id="heatmap" class="heatmap">
+        <div class="container-fluid">
+          <div class="section-title">
+            <h1>Heap Map</h1>
+            <h3>Our <span>Conservation Reach</span></h3>
+            <p>Explore our conservation activities across India. Each circle represents a district where we have
+              conducted awareness programs, nest box installations, bird counts, and community events. Larger and darker
+              circles indicate higher activity.</p>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-xl-10">
+              <div id="map-container">
+                <div id="map"></div>
+              </div>
+              <!-- Nest Box Order CTA -->
+              <div class="nestbox-cta">
+                <div class="nestbox-cta-inner">
+                  <div class="nestbox-cta-icon">🏠</div>
+                  <div class="nestbox-cta-content">
+                    <h4>Order a Nest Box & Get on the Map!</h4>
+                    <p>Every nest box you order is <strong>tracked and monitored</strong> on our activity map. Help us
+                      grow the bird count data across India — your contribution directly appears as a conservation
+                      point!</p>
+                  </div>
+                  <a href="#" class="nestbox-cta-btn"
+                    onclick="document.querySelector('a[href*=\x22order\x22], .order-btn, [href*=\x22ORDER\x22]')?.click(); return false;">
+                    <i class="bx bx-cart"></i> Order Nest Box
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Heatmap Section -->
+
       <!-- ======= About Section ======= -->
       <section id="about" class="about">
         <div class="container-fluid">
           <div class="row justify-content-center">
             <div class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch">
-              <a href="https://www.youtube.com/watch?v=USZs6hPom1Y" class="venobox play-btn mb-4" data-vbtype="video"
+              <a href="https://youtu.be/USZs6hPom1Y?si=vfCGW6ChNc3zwS32" class="venobox play-btn mb-4" data-vbtype="video"
                 data-autoplay="true"></a>
             </div>
 
@@ -189,43 +229,6 @@
         </div>
       </section>
       <!-- End About Section -->
-
-      <!-- ======= Heatmap Section ======= -->
-      <section id="heatmap" class="heatmap">
-        <div class="container-fluid">
-          <div class="section-title">
-            <h2>Activity Map</h2>
-            <h3>Our <span>Conservation Reach</span></h3>
-            <p>Explore our conservation activities across India. Each circle represents a district where we have
-              conducted awareness programs, nest box installations, bird counts, and community events. Larger and darker
-              circles indicate higher activity.</p>
-          </div>
-          <div class="row justify-content-center">
-            <div class="col-xl-10">
-              <div id="map-container">
-                <div id="map"></div>
-              </div>
-              <!-- Nest Box Order CTA -->
-              <div class="nestbox-cta">
-                <div class="nestbox-cta-inner">
-                  <div class="nestbox-cta-icon">🏠</div>
-                  <div class="nestbox-cta-content">
-                    <h4>Order a Nest Box & Get on the Map!</h4>
-                    <p>Every nest box you order is <strong>tracked and monitored</strong> on our activity map. Help us
-                      grow the bird count data across India — your contribution directly appears as a conservation
-                      point!</p>
-                  </div>
-                  <a href="#" class="nestbox-cta-btn"
-                    onclick="document.querySelector('a[href*=\x22order\x22], .order-btn, [href*=\x22ORDER\x22]')?.click(); return false;">
-                    <i class="bx bx-cart"></i> Order Nest Box
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End Heatmap Section -->
 
       <!-- ======= Counts Section ======= -->
       <section id="counts" class="counts section-bg">
