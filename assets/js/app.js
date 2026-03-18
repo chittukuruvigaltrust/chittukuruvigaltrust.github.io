@@ -5,7 +5,7 @@ $.getJSON("./assets/data/works.json", function (works) {
   works.forEach(work => {
     worksListEl.innerHTML += `
     <div
-    class="col-xl-3 col-lg-4 col-md-6 works-item filter-${work.type}" id="${work.id}"
+    class="col-xl-3 col-lg-4 col-md-6 col-sm-6 works-item filter-${work.type}" id="${work.id}"
   >
     <div class="works-wrap">
       <img
@@ -48,29 +48,26 @@ $.getJSON("./assets/data/services.json", function (servicesList) {
 $.getJSON("./assets/data/newsletters.json", function (newslettersList) {
   // Rendering the newsletter lists to newsletter section
   const newsletterListEl = document.querySelector("#newsletter #newsletter-lists");
-  newslettersList.reverse().forEach((news, index) => {
-    if (index <= 3) {
+  newslettersList
+    .sort((a, b) => a.id - b.id)
+    .filter((news) => news.type === "news")
+    .slice(0, 4)
+    .forEach((news) => {
       newsletterListEl.innerHTML += `
-  <div class="col-md-3 col-12" id="${news.id}">
-  <div class="newsletter-col mb-5">
-    <div class="img">
-      <img
-        src="./${news.imageUrl}"
-        alt=""
-        class="img-fluid"
-      />
-      <div class="icon">
-        <a href="${news.link}" target="_blank">
-          <i class="ri-file-download-line"></i
-        ></a>
+      <div class="col-lg-3 col-md-4 col-sm-6 col-12 newsletter-col" id="${news.id}">
+        <div class="newsletter-card">
+          <div class="newsletter-img-wrapper">
+            <img src="./${news.imageUrl}" alt="${news.title}" />
+            <a href="${news.link}" target="_blank" class="newsletter-overlay">
+              <i class="ri-eye-line"></i>
+              <span>View Article</span>
+            </a>
+          </div>
+          <div class="newsletter-info">
+            <h4>${news.title}</h4>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</div>
-  `;
-    }
-    else {
-      return;
-    }
-  })
+      `;
+    });
 });

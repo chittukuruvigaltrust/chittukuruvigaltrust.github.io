@@ -25,12 +25,11 @@ document.addEventListener("DOMContentLoaded", function () {
   loadCircleData(map);
 });
 
-// Color based on count (matching reference image)
+// Color based on count (Green for High, Yellow for Medium, Red for Low)
 function getColor(count) {
-  if (count <= 1) return "#a8d8ea"; // light blue
-  if (count <= 30) return "#f5a623"; // orange
-  if (count <= 50) return "#e8601c"; // dark orange
-  return "#c0392b"; // red
+  if (count <= 10) return "#dc3545"; // Red (Low)
+  if (count <= 50) return "#ffc107"; // Yellow (Medium)
+  return "#28a745"; // Green (High)
 }
 
 // Circle radius based on count
@@ -47,12 +46,11 @@ function addLegend(map) {
   legend.onAdd = function () {
     const div = L.DomUtil.create("div", "circle-legend");
     div.innerHTML = `
-            <div style="background:rgba(255,255,255,0.95);padding:12px 16px;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,0.15);font-family:'Open Sans',sans-serif;">
-                <h4 style="margin:0 0 8px;font-size:14px;font-weight:700;color:#333;">Color Scale</h4>
-                <div style="display:flex;align-items:center;margin:5px 0;"><span style="display:inline-block;width:16px;height:16px;background:#a8d8ea;border-radius:50%;margin-right:8px;border:2px solid rgba(0,0,0,0.2);"></span><span style="font-size:12px;color:#555;">Only 1 case</span></div>
-                <div style="display:flex;align-items:center;margin:5px 0;"><span style="display:inline-block;width:20px;height:20px;background:#f5a623;border-radius:50%;margin-right:8px;border:2px solid rgba(0,0,0,0.2);"></span><span style="font-size:12px;color:#555;">2-30 cases</span></div>
-                <div style="display:flex;align-items:center;margin:5px 0;"><span style="display:inline-block;width:24px;height:24px;background:#e8601c;border-radius:50%;margin-right:8px;border:2px solid rgba(0,0,0,0.2);"></span><span style="font-size:12px;color:#555;">31-50 cases</span></div>
-                <div style="display:flex;align-items:center;margin:5px 0;"><span style="display:inline-block;width:28px;height:28px;background:#c0392b;border-radius:50%;margin-right:8px;border:2px solid rgba(0,0,0,0.2);"></span><span style="font-size:12px;color:#555;">51-100 cases</span></div>
+            <div style="background:rgba(255, 255, 255, 0.95);padding:12px 16px;border-radius:12px;box-shadow:0 4px 15px rgba(0,0,0,0.1);font-family:'Open Sans',sans-serif;width:160px;">
+                <h4 style="margin:0 0 10px;font-size:14px;font-weight:700;color:#1a2c3d;border-bottom:2px solid #eee;padding-bottom:5px;">Impacts</h4>
+                <div style="display:flex;align-items:center;margin:6px 0;"><span style="display:inline-block;width:14px;height:14px;background:#28a745;border-radius:50%;margin-right:10px;border:2px solid rgba(0,0,0,0.1);"></span><span style="font-size:12px;color:#444;font-weight:600;">High (>50)</span></div>
+                <div style="display:flex;align-items:center;margin:6px 0;"><span style="display:inline-block;width:14px;height:14px;background:#ffc107;border-radius:50%;margin-right:10px;border:2px solid rgba(0,0,0,0.1);"></span><span style="font-size:12px;color:#444;font-weight:600;">Medium (11-50)</span></div>
+                <div style="display:flex;align-items:center;margin:6px 0;"><span style="display:inline-block;width:14px;height:14px;background:#dc3545;border-radius:50%;margin-right:10px;border:2px solid rgba(0,0,0,0.1);"></span><span style="font-size:12px;color:#444;font-weight:600;">Low (1-10)</span></div>
             </div>
         `;
     return div;

@@ -52,28 +52,34 @@
         <div class="row justify-content-center">
           <div class="col-xl-10 d-flex align-items-center justify-content-end">
             <h1 class="logo mr-auto d-block d-lg-none">
-              <a href="index.html" class="logo mr-auto"><img src="assets/img/logo-bg.png" alt="Sparrow Trust India"
+              <a href="index.html" class="logo mr-auto"><img src="assets/img/newlogo.png" alt="Sparrow Trust India"
                   class="img-fluid" /></a>
             </h1>
 
 
             <nav class="nav-menu d-none d-lg-block">
               <ul>
-                <li><a href="#home">Home</a></li>
+                <li class="active"><a href="#header">Home</a></li>
+                <li><a href="founder/">Founder</a></li>
                 <li><a href="#about">About Us</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#works">Our works</a></li>
-                <li><a href="#newsletter">Magazine</a></li>
-                <li><a href="./financials/">Financials</a></li>
+                <li><a href="newsletters/">Newsletter</a></li>
+                <li><a href="team/">Our Team</a></li>
+                <li><a href="financials/">Financials</a></li>
+                <!-- <li><a href="https://chitukuruvigal-arakkattalai.business.site/" target="_blank">Blog</a></li> -->
                 <li>
                   <a href="https://docs.google.com/spreadsheets/d/11DtFLqvT1MElvYi56A-E99IBEqcXago6uTSgImR0QTY/edit?gid=0#gid=0"
                     target="_blank">LIVE Volunteering</a>
                 </li>
-                <li>
-                  <a href="https://forms.gle/kTo4CrKpMkvmxmcM9" target="_blank">Donate</a>
+                <li class="btn-join">
+                  <a href="https://docs.google.com/forms/d/1xW2bhvj_4MR-LZ4kg_Pk5720Sy18P-WejJHj5j63BUI/viewform"
+                    target="_blank"><i class="ri-user-add-line"></i>Join Us</a>
                 </li>
-                <li class="text-danger">
-                  <a href="https://sparrowtrustindia.stores.instamojo.com/" target="_blank">Order Now</a>
+                <li class="btn-donate-nav">
+                  <a href="https://forms.gle/kTo4CrKpMkvmxmcM9" target="_blank"><i class="ri-heart-line"></i>Donate</a>
+                </li>
+                <li class="btn-order-nav">
+                  <a href="https://sparrowtrustindia.stores.instamojo.com/" target="_blank"><i
+                      class="ri-shopping-cart-2-line"></i>Order Nest Box</a>
                 </li>
               </ul>
             </nav>
@@ -84,145 +90,144 @@
     </header>
     <!-- End Header -->
 
-    <!-- ======= Home Section ======= -->
-    <section id="home">
-      <div id="homeCarousel" class="carousel slide carousel-fade" data-ride="carousel">
-        <div class="carousel-inner" role="listbox">
-          <!-- Slide 1 -->
-          <div class="carousel-item active" style="background-image: url(assets/img/bg.jpg)">
-            <div class="carousel-container">
-              <div class="container">
-                <h2 class="animated fadeInDown">CHITUKURUVIGAL ARAKKATTALAI (NGO) Regd.96/2018, Sec:80G NGO Darpan
-                  ID:TN/2019/0226841</h2>
-                <p class="animated fadeInUp">
-                  YOU CAN SUPPORT THIS NOBLE CAUSE IN THESE WAYS:
 
-                  1. VOLUNTEERING
-                  <br />
-                  Click "Live Voluntteering" tab above
-                  CERTIFICATE OF PARTICPATION provided
-
-                  2. DONATE
-                  <br />
-                  Click "Donate" tab above
-                  SEC.80G OF INCOME TAX DONATION RECEIPT provided
-
-                  3. SMALL SAVING
-                  <br />
-                  Scroll to "Contacts" at bottom
-                  Reach us for more details...!
-
-                </p>
-                <a href="#heatmap" class="btn-get-started animated fadeInUp scrollto">Get Started</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End Home -->
 
     <main id="main">
 
 
       <!-- ======= Heatmap Section ======= -->
-      <section id="heatmap" class="heatmap">
-        <div class="container-fluid">
-          <div class="section-title">
-            <h1>Heap Map</h1>
-            <h3>Our <span>Conservation Reach</span></h3>
-            <p>Explore our conservation activities across India. Each circle represents a district where we have
-              conducted awareness programs, nest box installations, bird counts, and community events. Larger and darker
-              circles indicate higher activity.</p>
-          </div>
-          <div class="row justify-content-center">
-            <div class="col-xl-10">
-              <div id="map-container">
+      <section id="heatmap" class="heatmap section-bg-light">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-5 mb-5 mb-lg-0" data-aos="fade-right">
+              <div class="heatmap-content">
+                <!-- h4 mb-4 text-primary -->
+                <!-- display-4 font-weight-bold mb-3 -->
+                <h3 class="h4 mb-4 text-primary">Heat Map</h3>
+                <h1 class="display-4 font-weight-bold mb-3" style='color: #388e3c;'>Our Live Conservation Impact</h1>
+                <p class="mb-5 lead text-muted">Track our real-time conservation impact across India. Our data-driven
+                  approach monitors sparrow populations and community engagement in every district. Each point
+                  represents an active conservation zone.</p>
+
+              </div>
+            </div>
+            <div class="col-lg-7" data-aos="fade-left">
+              <div id="map-container" class="shadow-lg border-0 bg-white">
                 <div id="map"></div>
               </div>
-              <!-- Nest Box Order CTA -->
-              <div class="nestbox-cta">
-                <div class="nestbox-cta-inner">
-                  <div class="nestbox-cta-icon">🏠</div>
-                  <div class="nestbox-cta-content">
-                    <h4>Order a Nest Box & Get on the Map!</h4>
-                    <p>Every nest box you order is <strong>tracked and monitored</strong> on our activity map. Help us
-                      grow the bird count data across India — your contribution directly appears as a conservation
-                      point!</p>
-                  </div>
-                  <a href="#" class="nestbox-cta-btn"
-                    onclick="document.querySelector('a[href*=\x22order\x22], .order-btn, [href*=\x22ORDER\x22]')?.click(); return false;">
-                    <i class="bx bx-cart"></i> Order Nest Box
-                  </a>
-                </div>
+            </div>
+          </div>
+          <div class="nestbox-cta">
+            <div class="nestbox-cta-inner">
+              <div class="nestbox-cta-icon">🏠</div>
+              <div class="nestbox-cta-content">
+                <h4>Order a Nest Box & Get on the Map!</h4>
+                <p>Every nest box you order is <strong>tracked and monitored</strong> on our heat map. Help us
+                  grow the bird count data across India — your contribution directly appears as a conservation
+                  point!</p>
               </div>
+              <a href="https://sparrowtrustindia.stores.instamojo.com/" class="nestbox-cta-btn"
+                onclick="document.querySelector('a[href*=\x22order\x22], .order-btn, [href*=\x22ORDER\x22]')?.click(); return false;">
+                <i class="bx bx-cart"></i> Order Nest Box
+              </a>
             </div>
           </div>
         </div>
       </section>
       <!-- End Heatmap Section -->
 
+      <!-- ======= Home Section ======= -->
+      <section id="home">
+        <div id="homeCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+          <div class="carousel-inner" role="listbox">
+            <!-- Slide 1 -->
+            <div class="carousel-item active" style="background-image: url(assets/img/bg.jpg)">
+              <div class="carousel-container">
+                <div class="container">
+                  <h2 class="animated fadeInDown">CHITUKURUVIGAL ARAKKATTALAI (NGO) Regd.96/2018, Sec:80G NGO Darpan
+                    ID:TN/2019/0226841</h2>
+                  <div style="text-align: left; display: flex; justify-content: center; color:#fff;">
+                    YOU CAN SUPPORT THIS NOBLE CAUSE IN THESE WAYS:
+                    <br />
+                    <br />
+                    1. VOLUNTEERING: Click "Join Us" button above CERTIFICATE OF PARTICPATION provided<br />
+                    2. DONATE : Click "Donate" button above SEC.80G OF INCOME TAX DONATION RECEIPT provided<br />
+                    3. SMALL SAVING : Scroll to "Reach out us" at bottom for more details...!
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Home -->
+
       <!-- ======= About Section ======= -->
-      <section id="about" class="about">
-        <div class="container-fluid">
-          <div class="row justify-content-center">
-            <div class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch">
-              <a href="https://youtu.be/USZs6hPom1Y?si=vfCGW6ChNc3zwS32" class="venobox play-btn mb-4" data-vbtype="video"
-                data-autoplay="true"></a>
+      <section id="about" class="about section-bg">
+        <div class="container" data-aos="fade-up">
+          <div class="row align-items-center">
+            <!-- Video Column -->
+            <div class="col-lg-6 mb-5 mb-lg-0 video-box d-flex justify-content-center align-items-stretch"
+              data-aos="zoom-in" data-aos-delay="100">
+              <a href="https://youtu.be/zyhq-AbtKX8?si=G1CWfr7eHGXcI0eO" class="venobox play-btn mb-4"
+                data-vbtype="video" data-autoplay="true"></a>
             </div>
 
-            <div
-              class="col-xl-5 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-2 px-lg-5">
-              <h3>ABOUT US</h3>
-              <p class="text-justify">
-                கோவை Chitukuruvigal Arakkattalai is
-                a growing charity in India working for House sparrows nearing a
-                decade. It was set up in 2014 and is registered under the
-                Societies’ Registration Act of 1860. There are status count,
-                which house sparrow population decline in number in India.
-                Chitukuruvigal Arakkattala moderates for their needs such as for
-                Awareness, Conservation measures, Nest boxes for sparrows in
-                danger and many more at different level with other bodies. It
-                participates in several activities and the methods to
-                implementation them a bring back. It works hand-in-hand with
-                school, institutions and public understanding the charity needs
-                working with and for aligned activities
+            <!-- Content Column -->
+            <div class="col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-2 px-lg-5"
+              data-aos="fade-left">
+              <h3 class="display-5 font-weight-bold mb-4 text-dark">Dedicated to Sparrow Conservation Since 2014</h3>
+              <p class="text-justify text-muted mb-4">
+                கோவை <strong class="text-primary">Chitukuruvigal Arakkattalai</strong> is a growing charity in India working for House sparrows nearing a
+                decade. It was set
+                up in 2014 and is registered under the Societies’ Registration Act of 1860. There are status count,
+                which house sparrow
+                population decline in number in India. Chitukuruvigal Arakkattala moderates for their needs such as for
+                Awareness,
+                Conservation measures, Nest boxes for sparrows in danger and many more at different level with other
+                bodies. It
+                participates in several activities and the methods to implementation them a bring back. It works
+                hand-in-hand with
+                school, institutions and public understanding the charity needs working with and for aligned activities
               </p>
-              <div class="section-title">
-                <h2>Our Objectives</h2>
-              </div>
-              <div class="icon-box">
-                <div class="icon"><i class="bx bx-heart"></i></div>
-                <p class="description">
-                  To promote welfare, social, cultural, charitable, health, education, and humanitarian activities to
-                  improve the quality of human life.
-                </p>
+
+              <div class="section-title text-left mb-4">
+                <h2 class="bg-primary text-white px-4 py-2 rounded-pill d-inline-block" style="font-size: 14px;">Our
+                  Core
+                  Objectives</h2>
               </div>
 
-              <div class="icon-box">
-                <div class="icon"><i class="bx bxs-graduation"></i></div>
-                <p class="description">
-                  To offer scholarships, stipends and financial support to deserving students in pursuing higher studies
-                  in Medicine, Art, Science and Engineering.
-                </p>
-              </div>
-
-              <div class="icon-box">
-                <div class="icon"><i class="bx bx-leaf"></i></div>
-                <p class="description">
-                  To establish and run comprehensive programmes that contribute to creating community consciousness on
-                  the
-                  need for environment conservation.
-                </p>
-              </div>
-
-              <div class="icon-box">
-                <div class="icon"><i class="bx bx-plus-medical"></i></div>
-                <p class="description">
-                  To help and collaborate in establishing medical centers, old age homes, and rehabilitation
-                  institutions
-                  for the destitute.
-                </p>
+              <div class="row">
+                <!-- Objective 1 -->
+                <div class="col-md-6 icon-box mb-4">
+                  <div class="icon shadow-sm mb-3"><i class="ri-heart-line text-primary"></i></div>
+                  <h4 class="h5 font-weight-bold mb-2">Social Welfare</h4>
+                  <p class="description small text-muted">Promoting charitable and humanitarian activities to improve
+                    quality of life across India.</p>
+                </div>
+                <!-- Objective 2 -->
+                <div class="col-md-6 icon-box mb-4">
+                  <div class="icon shadow-sm mb-3"><i class="ri-building-4-fill text-primary"></i></div>
+                  <h4 class="h5 font-weight-bold mb-2">Education Aid</h4>
+                  <p class="description small text-muted">Providing scholarships and financial support to deserving
+                    students for higher education.</p>
+                </div>
+                <!-- Objective 3 -->
+                <div class="col-md-6 icon-box mb-4">
+                  <div class="icon shadow-sm mb-3"><i class="ri-leaf-line text-primary"></i></div>
+                  <h4 class="h5 font-weight-bold mb-2">Conservation</h4>
+                  <p class="description small text-muted">Creating widespread community consciousness on environmental
+                    and bird conservation.</p>
+                </div>
+                <!-- Objective 4 -->
+                <div class="col-md-6 icon-box mb-4">
+                  <div class="icon shadow-sm mb-3"><i class="ri-hospital-line text-primary"></i></div>
+                  <h4 class="h5 font-weight-bold mb-2">Health Support</h4>
+                  <p class="description small text-muted">Collaborating with medical centers and institutions to support
+                    the destitute and needy.</p>
+                </div>
               </div>
             </div>
           </div>
@@ -290,43 +295,56 @@
       </section>
       <!-- End Services Section -->
 
+      <!-- ======= Events Registration Section ======= -->
+      <section id="events" class="events-registration">
+        <div class="container-fluid" data-aos="zoom-in">
+          <div class="events-wrapper">
+            <div class="events-content text-center text-white">
+              <h2 class="mb-3">We Love to Hear from You</h2>
+              <p class="mb-4">Register for our upcoming conservation events, workshops, and community programs. Your
+                engagement helps us grow!</p>
+              <a href="https://docs.google.com/forms/d/1xW2bhvj_4MR-LZ4kg_Pk5720Sy18P-WejJHj5j63BUI/viewform?edit_requested=true"
+                class="btn-event-pill" target="_blank">
+                Register for Events <i class="ri-arrow-right-line"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Events Registration Section -->
+
       <!-- ======= Products Section ======= -->
-      <section id="products" class="products">
-        <div class="container-fluid">
-          <div class="row justify-content-center">
-            <div class="col-xl-10">
-              <div class="row align-items-center justify-content-around">
-                <div class="col-md-6 col-12">
-                  <div class="text-center">
-                    <img src="./assets/img/nest_box.png" class="img-fluid rounded_shadow" alt="" />
-                  </div>
-                </div>
-                <div class="col-md-6 col-12">
-                  <div class="section-title text-left">
-                    <h2>OUR PRODUCT</h2>
-                    <h3>Want to buy our <span>Nest Box</span></h3>
-                    <a class="order-btn"
-                      href="https://sparrowtrustindia.stores.instamojo.com/product/123307/sparrow-nest-box/"
-                      target="_blank">Order Now</a>
-                  </div>
-                </div>
+      <section id="products" class="products-section">
+        <div class="container" data-aos="fade-up">
+          <div class="row align-items-center">
+            <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right" data-aos-delay="100">
+              <div class="products-image-wrapper">
+                <img src="./assets/img/nest_box.png" alt="Sparrow Nest Box" class="img-fluid" />
+              </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+              <div class="products-content">
+                <h2>Our Featured Product</h2>
+                <h3>The Perfect <span>Sparrow Nest Box</span></h3>
+                <p>Provide a safe and comfortable home for our feathered friends. Our hand-crafted nest boxes are
+                  specifically designed to meet the nesting needs of House Sparrows, ensuring they have a secure place
+                  to
+                  raise their next generation.</p>
+                <ul class="feature-list">
+                  <li><i class="ri-checkbox-circle-line"></i> Eco-friendly Wood</li>
+                  <li><i class="ri-checkbox-circle-line"></i> Ventilated Design</li>
+                  <li><i class="ri-checkbox-circle-line"></i> Easy to Mount</li>
+                  <li><i class="ri-checkbox-circle-line"></i> Safe for Sparrows</li>
+                </ul>
+                <a href="https://sparrowtrustindia.stores.instamojo.com/product/123307/sparrow-nest-box/"
+                  class="btn-order-premium" target="_blank">
+                  Order Now <i class="ri-shopping-cart-2-line"></i>
+                </a>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- Products Section -->
-
-      <!-- ======= Cta Section ======= -->
-      <section id="cta" class="cta">
-        <div class="container">
-          <div class="text-center">
-            <a class="cta-btn btn-donate mr-2" href="https://forms.gle/kTo4CrKpMkvmxmcM9" target="_blank">Donate</a>
-            <a class="cta-btn btn-member" href="https://forms.gle/kfZzcKmFGvZiyRHN6" target="_blank">Become Member</a>
-          </div>
-        </div>
-      </section>
-      <!-- End Cta Section -->
 
       <!-- ======= Works Section ======= -->
       <section id="works" class="works">
@@ -356,29 +374,34 @@
       <!-- End Works Section -->
 
       <!-- ======= Newsletter Section ======= -->
-      <section id="newsletter">
-        <div class="container">
-          <div class="section-title">
-            <h2>NewsLetter</h2>
-            <!-- <h3>Lorem ipsum <span>dolor sit</span> amet elit.</h3> -->
+      <section id="newsletter" class="newsletter-section">
+        <div class="container" data-aos="fade-up">
+          <div class="newsletter-header text-center">
+            <h2>Our Newsletters</h2>
+            <p class="text-muted mt-2">RNI Title code: TNBIL04629 • Voice of Sparrow Conservation</p>
+            <div class="section-title">
+              <h3>What <span>The Hindu</span> saying About Us</h3>
+            </div>
           </div>
           <div class="row justify-content-center">
             <div class="col-xl-10">
               <!-- Rendering newsletters from app.js file -->
               <div class="row" id="newsletter-lists"></div>
-              <div class="text-center">
-                <p class="text-center text-muted">
-                  *RNI Title code: TNBIL04629
-                </p>
-                <a class="newsletter-btn" href="./newsletters/">Read More</a>
+
+              <div class="newsletter-footer text-center mt-4">
+                <a class="btn-newsletter-premium mt-4" href="./newsletters/">
+                  <i class="ri-book-open-line"></i> View All Newsletters
+                </a>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- End About Us Section -->
+      <!-- End Newsletter Section -->
 
       <!-- ======= Success Section ======= -->
+
+      <!-- 
       <section id="success" class="success section-bg">
         <div class="container-fluid">
           <div class="section-title">
@@ -389,7 +412,7 @@
           <div class="row justify-content-center">
             <div class="col-xl-10">
               <div class="row">
-                <!-- Success 1 -->
+              
                 <div class="col-lg-6">
                   <div class="card mb-3">
                     <div class="row no-gutters">
@@ -413,7 +436,7 @@
                     </div>
                   </div>
                 </div>
-                <!-- Success 2 -->
+        
                 <div class="col-lg-6">
                   <div class="card mb-3">
                     <div class="row no-gutters">
@@ -441,7 +464,7 @@
             </div>
           </div>
 
-          <!--  Shields and Appreciations -->
+  
           <div class="section-title mt-5">
             <h2>Shields and Appreciations</h2>
           </div>
@@ -468,7 +491,9 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
+
+
       <!-- End Success Section -->
 
       <!-- ======= Sponsors Section ======= -->
@@ -494,38 +519,60 @@
         </div>
       </section>
       <!-- End Sponsors Section -->
+
+
     </main>
     <!-- End #main -->
 
     <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact section-bg">
-      <div class="container-fluid">
-        <div class="section-title">
-          <h2>Contact</h2>
-          <h3>Get In Touch With <span>Us</span></h3>
-        </div>
+    <section id="contact" class="contact">
+      <div style="padding: 10px;" data-aos="fade-up">
+        <div class="contact-premium-wrapper">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="contact-header text-left">
+                <span class="badge-pill">Reach Out To Us</span>
+                <h2>We'd Love to Hear From You.</h2>
+                <p>Or just reach out manually to <a
+                    href="mailto:chittukuruvigaltrust@gmail.com">chittukuruvigaltrust@gmail.com</a>.</p>
+              </div>
+            </div>
+          </div>
 
-        <div class="row justify-content-center">
-          <div class="col-xl-8">
-            <div class="row">
-              <div class="col-lg-12">
-                <div class="row justify-content-center">
-                  <div class="col-md-4 info d-flex flex-column align-items-stretch mb-3">
-                    <i class="bx bx-user"></i>
-                    <h4>Help Desk</h4>
-                    How can we support you<br />
-                  </div>
-                  <div class="col-md-4 info d-flex flex-column align-items-stretch mb-3">
-                    <i class="bx bx-phone"></i>
-                    <h4>Call Us</h4>
-                    <p>+91 78100 58910</p>
-                  </div>
-                  <div class="col-md-4 info d-flex flex-column align-items-stretch mb-3">
-                    <i class="bx bx-envelope"></i>
-                    <h4>Email Us</h4>
-                    <p>chittukuruvigaltrust@gmail.com</p>
-                  </div>
+          <div class="row mt-4">
+            <!-- Email Support -->
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="contact-item">
+                <div class="contact-icon-mini">
+                  <i class="ri-mail-line"></i>
                 </div>
+                <h4>Email Support</h4>
+                <span class="subtext">Our team can respond in real time.</span>
+                <a href="mailto:chittukuruvigaltrust@gmail.com" class="detail">chittukuruvigaltrust@gmail.com</a>
+              </div>
+            </div>
+
+            <!-- Visit Our Office -->
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="contact-item">
+                <div class="contact-icon-mini">
+                  <i class="ri-map-pin-line"></i>
+                </div>
+                <h4>Visit Our Office</h4>
+                <span class="subtext">Visit our location in real life.</span>
+                <a href="https://goo.gl/maps/..." target="_blank" class="detail">Coimbatore, Tamil Nadu, India</a>
+              </div>
+            </div>
+
+            <!-- Call Us Directly -->
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+              <div class="contact-item">
+                <div class="contact-icon-mini">
+                  <i class="ri-phone-line"></i>
+                </div>
+                <h4>Call Us Directly</h4>
+                <span class="subtext">Available during working hours.</span>
+                <a href="tel:+917810058910" class="detail">+91 78100 58910</a>
               </div>
             </div>
           </div>
@@ -536,7 +583,7 @@
 
     <!-- ======= Footer ======= -->
     <footer id="footer">
-      <div class="footer-top">
+      <!-- <div class="footer-top">
         <div class="container-fluid">
           <div class="row justify-content-center">
             <div class="col-xl-10">
@@ -558,14 +605,11 @@
                       </p>
                       <p><b>Registration No: R/Ganapathy/Book-4/96/2018</b></p>
                       <div class="social-links mt-3">
-                        <a href="https://www.facebook.com/natarajan.dhanasekar" target="_blank" class="facebook"><i
-                            class="bx bxl-facebook"></i></a>
-                        <a href="https://www.instagram.com/chitukuruvigal_dhanasekar/" target="_blank"
-                          class="instagram"><i class="bx bxl-instagram"></i></a>
-                        <a href="https://twitter.com/Chittukuruviga1?s=09" target="_blank" class="twitter"><i
-                            class="bx bxl-twitter"></i></a>
-                        <a href="https://youtu.be/USZs6hPom1Y" target="_blank" class="twitter"><i
-                            class="bx bxl-youtube"></i></a>
+                        <a href="https://www.facebook.com/natarajan.dhanasekar" target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
+                        <a href="https://www.instagram.com/chittukuruvigal_dhanasekar/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
+                        <a href="https://www.youtube.com/@chitukuruvigalarakkattalai715" target="_blank" class="youtube"><i class="bx bxl-youtube"></i></a>
+                        <a href="https://www.linkedin.com/in/chittukuruvigal-arakkattalai-7a1961170/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                        <a href="https://whatsapp.com/channel/0029VbC4dxiAjPXHfkpdMX3k" target="_blank" class="whatsapp"><i class="bx bxl-whatsapp"></i></a>
                       </div>
                     </div>
                   </div>
@@ -609,11 +653,13 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <div class="container">
         <div class="copyright">
-          &copy; Copyright <strong><span>ChitukuruvigalArakkattalai</span></strong>. All Rights Reserved
+          &copy; Copyright
+          <script>document.write(new Date().getFullYear())</script>
+          <strong><span>ChitukuruvigalArakkattalai</span></strong>. All Rights Reserved
         </div>
       </div>
     </footer>
@@ -683,34 +729,34 @@
       }
     </style>
     <script>
-      // Auto-play audio on first user interaction
-      (function () {
-        const audio = document.getElementById('sparrow-audio');
-        const icon = document.getElementById('audio-icon');
-        const label = document.getElementById('audio-label');
-        const btn = document.getElementById('audio-toggle');
-        let started = false;
+        // Auto-play audio on first user interaction
+        (function () {
+          const audio = document.getElementById('sparrow-audio');
+          const icon = document.getElementById('audio-icon');
+          const label = document.getElementById('audio-label');
+          const btn = document.getElementById('audio-toggle');
+          let started = false;
 
-        function startAudio() {
-          if (started) return;
-          started = true;
-          audio.volume = 0.3;
-          audio.play().then(() => {
-            icon.className = 'bx bx-volume-full';
-            label.textContent = 'Mute';
-            btn.classList.add('playing');
-          }).catch(() => { });
-          document.removeEventListener('click', startAudio);
-          document.removeEventListener('scroll', startAudio);
-          document.removeEventListener('keydown', startAudio);
-          document.removeEventListener('touchstart', startAudio);
-        }
+          function startAudio() {
+            if (started) return;
+            started = true;
+            audio.volume = 0.3;
+            audio.play().then(() => {
+              icon.className = 'bx bx-volume-full';
+              label.textContent = 'Mute';
+              btn.classList.add('playing');
+            }).catch(() => { });
+            document.removeEventListener('click', startAudio);
+            document.removeEventListener('scroll', startAudio);
+            document.removeEventListener('keydown', startAudio);
+            document.removeEventListener('touchstart', startAudio);
+          }
 
-        document.addEventListener('click', startAudio);
-        document.addEventListener('scroll', startAudio);
-        document.addEventListener('keydown', startAudio);
-        document.addEventListener('touchstart', startAudio);
-      })();
+          document.addEventListener('click', startAudio);
+          document.addEventListener('scroll', startAudio);
+          document.addEventListener('keydown', startAudio);
+          document.addEventListener('touchstart', startAudio);
+        })();
 
       function toggleAudio() {
         const audio = document.getElementById('sparrow-audio');
@@ -754,6 +800,22 @@
     <script src="assets/js/app.js"></script>
     <script src="assets/js/chatbot.js"></script>
     <script src="assets/js/heatmap.js"></script>
+
+    <!-- Floating Social Media Sidebar -->
+    <div class="floating-social">
+      <a href="https://www.facebook.com/natarajan.dhanasekar" class="floating-social-icon facebook" target="_blank"><i
+          class="bx bxl-facebook"></i></a>
+      <a href="https://www.instagram.com/chittukuruvigal_dhanasekar/" class="floating-social-icon instagram"
+        target="_blank"><i class="bx bxl-instagram"></i></a>
+      <a href="https://www.youtube.com/@chitukuruvigalarakkattalai715" class="floating-social-icon youtube"
+        target="_blank"><i class="bx bxl-youtube"></i></a>
+      <a href="https://www.linkedin.com/in/chittukuruvigal-arakkattalai-7a1961170/"
+        class="floating-social-icon linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>
+      <a href="https://whatsapp.com/channel/0029VbC4dxiAjPXHfkpdMX3k" class="floating-social-icon whatsapp"
+        target="_blank"><i class="bx bxl-whatsapp"></i></a>
+      <a href="https://g.page/r/CWOvKVslwzIMEBM/review" class="floating-social-icon google" target="_blank"><i
+          class="bx bxl-google"></i></a>
+    </div>
   </body>
 
 </html>

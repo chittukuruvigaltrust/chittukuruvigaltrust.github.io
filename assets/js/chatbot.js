@@ -138,7 +138,6 @@ document.addEventListener('DOMContentLoaded', () => {
         { q: "team", k: ["team", "who works", "members", "staff", "volunteer"], a: "👥 Our Team: M. Sampath Kumar, S. Jeeva, D. Vignesh, B. Karthikeyan, A. Naveen, Utharraj, Rajesh, Radha, R.M. Manicam, V. Praveen Kumar, Senthil Kumar, Arumugasami Chetty, and members from Tirupati, Tiruvarur & across Tamil Nadu." },
 
         /* POINT 10: DONATION */
-        { q: "donation", k: ["donate", "donation", "money", "account", "bank", "support"], a: "💚 Account Name: 'CHITTUKURUVIGAL ARAKKATALAI'. We provide Sec.80G Income Tax donation receipts. For bank details, contact us at 9786698433 or email chittukuruvigaltrust@gmail.com. Click 'Donate' in our menu!" },
 
         /* POINT 13: TAMIL NAME & MEANING */
         { q: "tamil name", k: ["tamil", "சிட்டுக்குருவி", "meaning", "name meaning"], a: "🐦 In Tamil: 'சிட்டுக்குருவி' — named because it flies like a 'சிட்டு' (fast & swift). In English 'Sparrow' means a fast, small, active bird. Zoological name: Passer domesticus (lives in residential areas). It was among the first animals to get a scientific name!" },

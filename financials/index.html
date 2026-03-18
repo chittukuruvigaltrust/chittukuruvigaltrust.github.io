@@ -33,6 +33,7 @@
 
         <!-- Template Main CSS File -->
         <link href="../assets/css/style.css" rel="stylesheet">
+        <link href="../assets/css/chatbot.css" rel="stylesheet">
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175963273-1"></script>
         <script>
@@ -52,25 +53,35 @@
             <div class="container-fluid">
                 <div class="row justify-content-center">
                     <div class="col-xl-10 d-flex align-items-center justify-content-end">
-                        <h1 class="logo mr-auto">
-                            <a href="../" class="logo mr-auto"><img src="../assets/img/logo-bg.png" alt=""
+                        <h1 class="logo mr-auto d-block d-lg-none">
+                            <a href="../" class="logo mr-auto"><img src="../assets/img/newlogo.png" alt=""
                                     class="img-fluid"></a>
                         </h1>
 
                         <nav class="nav-menu d-none d-lg-block">
                             <ul>
                                 <li><a href="../">Home</a></li>
-                                <li><a href="../index.html#about">About Us</a></li>
-                                <li><a href="../index.html#services">Services</a></li>
-                                <li><a href="../index.html#works">Our works</a></li>
+                                <li><a href="../founder/">Founder</a></li>
+                                <li><a href="../#about">About Us</a></li>
                                 <li><a href="../newsletters/">Newsletter</a></li>
-                                <li><a href="https://ngodarpan.gov.in/index.php/search/">Blog</a></li>
+                                <li><a href="../team/">Our Team</a></li>
+                                <li class="active"><a href="../financials/">Financials</a></li>
+                                <!-- <li><a href="https://chitukuruvigal-arakkattalai.business.site/" target="_blank">Blog</a></li> -->
                                 <li>
-                                    <a href="https://forms.gle/kTo4CrKpMkvmxmcM9" target="_blank">Donate</a>
+                                    <a href="https://docs.google.com/spreadsheets/d/11DtFLqvT1MElvYi56A-E99IBEqcXago6uTSgImR0QTY/edit?gid=0#gid=0"
+                                        target="_blank">LIVE Volunteering</a>
                                 </li>
-                                <li class="text-danger">
+                                <li class="btn-join">
+                                    <a href="https://docs.google.com/forms/d/1xW2bhvj_4MR-LZ4kg_Pk5720Sy18P-WejJHj5j63BUI/viewform"
+                                        target="_blank"><i class="ri-user-add-line"></i>Join Us</a>
+                                </li>
+                                <li class="btn-donate-nav">
+                                    <a href="https://forms.gle/kTo4CrKpMkvmxmcM9" target="_blank"><i
+                                            class="ri-heart-line"></i>Donate</a>
+                                </li>
+                                <li class="btn-order-nav">
                                     <a href="https://sparrowtrustindia.stores.instamojo.com/product/123307/sparrow-nest-box/"
-                                        target="_blank">Order Now</a>
+                                        target="_blank"><i class="ri-shopping-cart-2-line"></i>Order Nest Box</a>
                                 </li>
                             </ul>
                         </nav>
@@ -173,23 +184,11 @@
                     </div>
             </section><!-- End Financials -->
 
-            <!-- ======= Cta Section ======= -->
-            <section id="cta" class="cta">
-                <div class="container">
-                    <div class="text-center">
-                        <a class="cta-btn btn-donate mr-2" href="https://forms.gle/kTo4CrKpMkvmxmcM9"
-                            target="_blank">Donate</a>
-                        <a class="cta-btn btn-member" href="https://forms.gle/kfZzcKmFGvZiyRHN6" target="_blank">Become
-                            Member</a>
-                    </div>
-                </div>
-            </section>
-            <!-- End Cta Section -->
 
         </main><!-- End #main -->
         <!-- ======= Footer ======= -->
         <footer id="footer">
-            <div class="footer-top">
+            <!-- <div class="footer-top">
                 <div class="container-fluid">
                     <div class="row justify-content-center">
                         <div class="col-xl-10">
@@ -264,15 +263,129 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <div class="container">
                 <div class="copyright">
-                    &copy; Copyright <strong><span>SparrowTrustIndia</span></strong>. All Rights Reserved
+                    &copy; Copyright <script>document.write(new Date().getFullYear())</script> <strong><span>Chitukuruvigal Arakkattalai</span></strong>. All Rights Reserved
                 </div>
             </div>
         </footer>
         <!-- End Footer -->
+        <!-- Ambient Sparrow Audio -->
+        <audio id="sparrow-audio" loop preload="auto">
+            <source src="../assets/audio/sparrow-audio.mpeg" type="audio/mpeg">
+        </audio>
+        <button id="audio-toggle" title="Toggle sparrow sounds" onclick="toggleAudio()">
+            <i class="bx bx-volume-mute" id="audio-icon"></i>
+            <span id="audio-label">🐦 Listen</span>
+        </button>
+        <style>
+            #audio-toggle {
+                position: fixed;
+                bottom: 25px;
+                left: 25px;
+                z-index: 996;
+                background: linear-gradient(135deg, #2e7d32, #4caf50);
+                color: #fff;
+                border: none;
+                border-radius: 50px;
+                padding: 10px 18px;
+                font-size: 14px;
+                font-family: 'Open Sans', sans-serif;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                box-shadow: 0 4px 15px rgba(46, 125, 50, 0.4);
+                transition: all 0.3s ease;
+            }
+
+            #audio-toggle:hover {
+                transform: scale(1.05);
+                box-shadow: 0 6px 20px rgba(46, 125, 50, 0.5);
+            }
+
+            #audio-toggle.playing {
+                background: linear-gradient(135deg, #1b5e20, #388e3c);
+                animation: pulse-glow 2s ease-in-out infinite;
+            }
+
+            #audio-toggle i {
+                font-size: 20px;
+            }
+
+            @keyframes pulse-glow {
+
+                0%,
+                100% {
+                    box-shadow: 0 4px 15px rgba(46, 125, 50, 0.4);
+                }
+
+                50% {
+                    box-shadow: 0 4px 25px rgba(76, 175, 80, 0.7);
+                }
+            }
+
+            @media (max-width: 768px) {
+                #audio-toggle {
+                    bottom: 80px;
+                    left: 15px;
+                    padding: 8px 14px;
+                    font-size: 12px;
+                }
+            }
+        </style>
+        <script>
+            // Auto-play audio on first user interaction
+            (function () {
+                const audio = document.getElementById('sparrow-audio');
+                const icon = document.getElementById('audio-icon');
+                const label = document.getElementById('audio-label');
+                const btn = document.getElementById('audio-toggle');
+                let started = false;
+
+                function startAudio() {
+                    if (started) return;
+                    started = true;
+                    audio.volume = 0.3;
+                    audio.play().then(() => {
+                        icon.className = 'bx bx-volume-full';
+                        label.textContent = 'Mute';
+                        btn.classList.add('playing');
+                    }).catch(() => { });
+                    document.removeEventListener('click', startAudio);
+                    document.removeEventListener('scroll', startAudio);
+                    document.removeEventListener('keydown', startAudio);
+                    document.removeEventListener('touchstart', startAudio);
+                }
+
+                document.addEventListener('click', startAudio);
+                document.addEventListener('scroll', startAudio);
+                document.addEventListener('keydown', startAudio);
+                document.addEventListener('touchstart', startAudio);
+            })();
+
+            function toggleAudio() {
+                const audio = document.getElementById('sparrow-audio');
+                const icon = document.getElementById('audio-icon');
+                const label = document.getElementById('audio-label');
+                const btn = document.getElementById('audio-toggle');
+                if (audio.paused) {
+                    audio.volume = 0.3;
+                    audio.play();
+                    icon.className = 'bx bx-volume-full';
+                    label.textContent = 'Mute';
+                    btn.classList.add('playing');
+                } else {
+                    audio.pause();
+                    icon.className = 'bx bx-volume-mute';
+                    label.textContent = '🐦 Listen';
+                    btn.classList.remove('playing');
+                }
+            }
+        </script>
+
         <!-- Top icon -->
         <a href="#home" class="back-to-top"><i class="icofont-simple-up"></i></a>
 
@@ -288,7 +401,24 @@
 
         <!-- Template Main JS File -->
         <script src="../assets/js/main.js"></script>
+        <script src="../assets/js/chatbot.js"></script>
         <script src="./app.js"></script>
+
+        <!-- Floating Social Media Sidebar -->
+        <div class="floating-social">
+            <a href="https://www.facebook.com/natarajan.dhanasekar" class="floating-social-icon facebook"
+                target="_blank"><i class="bx bxl-facebook"></i></a>
+            <a href="https://www.instagram.com/chittukuruvigal_dhanasekar/" class="floating-social-icon instagram"
+                target="_blank"><i class="bx bxl-instagram"></i></a>
+            <a href="https://www.youtube.com/@chitukuruvigalarakkattalai715" class="floating-social-icon youtube"
+                target="_blank"><i class="bx bxl-youtube"></i></a>
+            <a href="https://www.linkedin.com/in/chittukuruvigal-arakkattalai-7a1961170/"
+                class="floating-social-icon linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>
+            <a href="https://whatsapp.com/channel/0029VbC4dxiAjPXHfkpdMX3k" target="_blank"
+                class="floating-social-icon whatsapp"><i class="bx bxl-whatsapp"></i></a>
+            <a href="https://g.page/r/CWOvKVslwzIMEBM/review" class="floating-social-icon google" target="_blank"><i
+                    class="bx bxl-google"></i></a>
+        </div>
 
     </body>
 

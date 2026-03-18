@@ -32,20 +32,20 @@
   {
     "id": 6,
     "type": "public",
-    "title": "Public",
+    "title": "Public 1",
     "imageUrl": "assets/img/works/1.png"
   },
   {
     "id": 7,
     "type": "public",
-    "title": "Public",
-    "imageUrl": "assets/img/works/2.jpg"
+    "title": "Public 2",
+    "imageUrl": "assets/img/works/2.png"
   },
   {
     "id": 8,
     "type": "public",
-    "title": "Public",
-    "imageUrl": "assets/img/works/3.png"
+    "title": "Public 3",
+    "imageUrl": "assets/img/works/3.jpg"
   },
   {
     "id": 9,

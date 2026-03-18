@@ -5,9 +5,9 @@
         <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-        <title>Newsletters - Sparrow Trust India</title>
-        <meta content="" name="descriptison" />
-        <meta content="" name="keywords" />
+        <title>Founder - Sparrow Trust India</title>
+        <meta content="N Dhanasekar, Founder of Sparrow Trust India" name="description" />
+        <meta content="N Dhanasekar, environmentalist, sparrow lover, NGO founder" name="keywords" />
 
         <!-- Favicons -->
         <link href="../assets/img/favicon.png" rel="icon" />
@@ -21,7 +21,6 @@
             href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
             rel="stylesheet" />
 
-
         <!-- Vendor CSS Files -->
         <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link href="../assets/vendor/icofont/icofont.min.css" rel="stylesheet">
@@ -34,15 +33,83 @@
         <!-- Template Main CSS File -->
         <link href="../assets/css/style.css" rel="stylesheet">
         <link href="../assets/css/chatbot.css" rel="stylesheet">
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175963273-1"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() { dataLayer.push(arguments); }
-            gtag('js', new Date());
+        <style>
+            .founder-hero {
+                background: linear-gradient(135deg, rgba(50, 133, 55, 0.8), rgba(46, 125, 50, 0.8)),
+                    url("../assets/img/about.jpg") center center no-repeat;
+                background-size: cover;
+                padding: 100px 0;
+                color: #fff;
+            }
 
-            gtag('config', 'UA-175963273-1');
-        </script>
+            .founder-img {
+                border: 5px solid #fff;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+                border-radius: 10px;
+            }
+
+            .section-label {
+                background: #2e7d32;
+                color: #fff;
+                padding: 5px 15px;
+                border-radius: 50px;
+                font-weight: 600;
+                font-size: 14px;
+                display: inline-block;
+                margin-bottom: 10px;
+            }
+
+            .journey-item {
+                border-left: 3px solid #428bca;
+                padding-left: 20px;
+                padding-bottom: 20px;
+                position: relative;
+            }
+
+            .journey-item::before {
+                content: '';
+                position: absolute;
+                width: 15px;
+                height: 15px;
+                background: #428bca;
+                border-radius: 50%;
+                left: -9px;
+                top: 5px;
+            }
+
+            .award-card {
+                background: #fff;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+                transition: transform 0.3s;
+                height: 100%;
+                border-bottom: 3px solid #2e7d32;
+            }
+
+            .award-card:hover {
+                transform: translateY(-5px);
+            }
+
+            .media-box {
+                background: #fff;
+                padding: 30px;
+                border-radius: 15px;
+                margin-bottom: 30px;
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+                border: 1px solid #e9ecef;
+            }
+
+            .bg-custom-light {
+                background-color: #e0e4e8;
+            }
+
+            .media-icon {
+                font-size: 40px;
+                color: #1b5e20;
+                margin-bottom: 15px;
+            }
+        </style>
     </head>
 
     <body>
@@ -56,13 +123,12 @@
                             <a href="../" class="logo mr-auto"><img src="../assets/img/newlogo.png" alt=""
                                     class="img-fluid"></a>
                         </h1>
-
                         <nav class="nav-menu d-none d-lg-block">
                             <ul>
                                 <li><a href="../">Home</a></li>
-                                <li><a href="../founder/">Founder</a></li>
+                                <li class="active"><a href="../founder/">Founder</a></li>
                                 <li><a href="../#about">About Us</a></li>
-                                <li class="active"><a href="../newsletters/">Newsletter</a></li>
+                                <li><a href="../newsletters/">Newsletter</a></li>
                                 <li><a href="../team/">Our Team</a></li>
                                 <li><a href="../financials/">Financials</a></li>
                                 <!-- <li><a href="https://chitukuruvigal-arakkattalai.business.site/" target="_blank">Blog</a></li> -->
@@ -84,65 +150,208 @@
                                 </li>
                             </ul>
                         </nav>
-                        <!-- .nav-menu -->
                     </div>
                 </div>
             </div>
         </header>
-        <!-- End Header -->
 
         <main id="main">
-
-            <!-- ======= Home Section ======= -->
-            <section id="home" class="inner-pages">
-                <div id="homeCarousel" class="carousel slide carousel-fade" data-ride="carousel">
-                    <div class="carousel-inner" role="listbox">
-                        <!-- Slide 1 -->
-                        <div class="carousel-item active" style="background-image: url(../assets/img/newsletter.jpg);">
-                            <div class="carousel-container">
-                                <div class="container">
-                                    <h2 class="animated fadeInDown">
-                                        Our Newsletters
-                                    </h2>
-                                </div>
+            <!-- ======= Hero Section ======= -->
+            <section class="founder-hero">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-4 text-center">
+                            <img src="../assets/img/founder-webp.webp" class="img-fluid founder-img mb-4"
+                                alt="N Dhanasekar">
+                        </div>
+                        <div class="col-lg-8">
+                            <span class="section-label">THE VISIONARY</span>
+                            <h1 class="display-4 font-weight-bold">N Dhanasekar</h1>
+                            <h3 class="font-italic mb-4 text-info" style="color: white !important;">Alias: Chitukuruvigal Dhanasekar</h3>
+                            <p class="lead text-white">
+                                Coimbatorian, a passionate environmentalist for over a decade, sparrow lover, and nature
+                                enthusiast.
+                                By profession, a System Engineer in the Automotive domain with nearly 20 years of
+                                experience.
+                                <br/>
+                                Founder of <strong style="text-decoration: underline;color: #fff;font-weight: 900;">Chitrukuruvigal
+                                    Arakkattalai</strong> NGO and Secretary in traditional society.
+                            </p>
+                            <div class="mt-4">
+                                <span class="badge badge-info p-2 mr-2" style="background-color: #428bca;">15+ Media Interviews</span>
+                                <span class="badge badge-success p-2 mr-2" style="background-color: #2e7d32;">Huge Social Following</span>
+                                <span class="badge badge-info p-2" style="background-color: #428bca;">NGO Founder Since 2014</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <!-- End Home -->
 
-            <!-- ======= Breadcrumbs ======= -->
-            <section id="breadcrumbs" class="breadcrumbs">
-                <div class="container-fluid">
-
-                    <div class="row justify-content-center">
-                        <div class="col-xl-10">
-                            <ol>
-                                <li><a href="../">Home</a></li>
-                                <li>Newsletters</li>
-                            </ol>
+            <!-- ======= Journey Section ======= -->
+            <section class="py-5 bg-light">
+                <div class="container">
+                    <div class="section-title">
+                        <h2>Our Journey</h2>
+                        <p>A decade of conservation and awareness</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="journey-item">
+                                <h4>Key Observances</h4>
+                                <p>World Sparrow Day, Tree Day, Wetlands Day, Environment Day, Women's Day, and National
+                                    Days.</p>
+                            </div>
+                            <div class="journey-item">
+                                <h4>Awareness & Advocacy</h4>
+                                <p>Guest lectures, sessions, and awareness programs at Schools, Colleges, and
+                                    Orphanages.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="journey-item">
+                                <h4>Direct Action</h4>
+                                <p>Sparrow conservation, Lake renovation, and Tree plantation drives.</p>
+                            </div>
+                            <div class="journey-item">
+                                <h4>Community Support</h4>
+                                <p>Public wellness initiatives and Natural Calamity Relief activities.</p>
+                            </div>
                         </div>
                     </div>
-
                 </div>
-            </section><!-- End Breadcrumbs -->
+            </section>
 
-            <!-- ======= Newsletter ======= -->
-            <section class="newsletter-section" id="newsletter">
+            <!-- ======= Contributions Section ======= -->
+            <section class="py-5">
                 <div class="container">
-                    <div class="section-header text-center">
-                        <h2>Featured Newsletters</h2>
-                        <p class="text-muted mt-3">RNI Title code: TNBIL04629 • Voice of Sparrow Conservation</p>
-                    </div>
-                    <div class="row justify-content-center" id="newsletter-main-lists">
-                        <!-- Rendering newsletters from app.js file -->
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="media-box">
+                                <i class="icofont-microphone media-icon"></i>
+                                <h3>Public Speaker & Environmentalist</h3>
+                                <p class="text-muted">Since 2010 - Present</p>
+                                <ul class="list-unstyled">
+                                    <li><i class="icofont-check-circled text-success"></i> Various workshops and
+                                        sessions on sparrow feeders at schools.</li>
+                                    <li><i class="icofont-check-circled text-success"></i> Keynote addresses to colleges
+                                        on birds and conservation.</li>
+                                    <li><i class="icofont-check-circled text-success"></i> Prolific article writer and
+                                        blogger.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="media-box">
+                                <i class="icofont-users-social media-icon"></i>
+                                <h3>Founder, NGO</h3>
+                                <p class="text-muted">Since 2014 - Present</p>
+                                <ul class="list-unstyled">
+                                    <li><i class="icofont-check-circled text-success"></i> Motivating and mentoring
+                                        teams of associated youngsters.</li>
+                                    <li><i class="icofont-check-circled text-success"></i> Collaborating with experts
+                                        and researchers on conservation.</li>
+                                    <li><i class="icofont-check-circled text-success"></i> Active volunteering and
+                                        community leadership.</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </section><!-- End Newsletter section-->
+            </section>
 
+            <!-- ======= Media Section ======= -->
+            <section class="py-5 bg-custom-light">
+                <div class="container text-center">
+                    <div class="section-title">
+                        <h2>Media Presence</h2>
+                        <p style="color: black;">Voice of conservation in news and broadcast</p>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-md-4">
+                            <div class="media-box h-100">
+                                <i class="icofont-news media-icon"></i>
+                                <h3>Newspapers</h3>
+                                <p>
+                                    <strong>The Hindu</strong> (5+ times) <br />
+                                    <strong>Dinamalar</strong> (3+ times)<br />
+                                    <strong>Malaimalar</strong> (2+ times).
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="media-box h-100">
+                                <i class="icofont-mic media-icon"></i>
+                                <h3>Radio</h3>
+                                <p><strong>AIR</strong> (2+ times)</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="media-box h-100">
+                                <i class="icofont-monitor media-icon"></i>
+                                <h3>Television</h3>
+                                <p>
+                                    <strong>Puthiya Thalaimurai</strong> (2+ times)<br />
+                                    <strong>Vendhar</strong> <br />
+                                    <strong>Thanthi</strong>.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-        </main><!-- End #main -->
+            <!-- ======= Awards Section ======= -->
+            <section class="py-5">
+                <div class="container">
+                    <div class="section-title">
+                        <h2>Awards & Honors</h2>
+                        <p style="color: black;">Recognitions for selfless service</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="award-card">
+                                <h5>Chief Guest Honor</h5>
+                                <p class="small text-muted">2019, SRPT</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="award-card">
+                                <h5>Alumni Excellence Award</h5>
+                                <p class="small text-muted">2019, SREC</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="award-card">
+                                <h5>Best Social Worker Award</h5>
+                                <p class="small text-muted">2018, Nature Science Foundation</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="award-card">
+                                <h5>Green Champion Winner</h5>
+                                <p class="small text-muted">2016, World Environment Day</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="award-card">
+                                <h5>Best Social Responsibility</h5>
+                                <p class="small text-muted">2015, Q2</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="award-card">
+                                <h5>Foto Fox Achiever Award</h5>
+                                <p class="small text-muted">2020, Prozone Mall</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center mt-4">
+                        <p class="font-italic">And more than 10 awards received between 2021-2023.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
         <!-- ======= Footer ======= -->
         <footer id="footer">
             <!-- <div class="footer-top">
@@ -226,7 +435,7 @@
                 bottom: 25px;
                 left: 25px;
                 z-index: 996;
-                background: linear-gradient(135deg, #2e7d32, #4caf50);
+                background: linear-gradient(135deg, #5cb874 0%, #449d5b 100%);
                 color: #fff;
                 border: none;
                 border-radius: 50px;
@@ -339,10 +548,8 @@
         <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
         <script src="../assets/vendor/owl.carousel/owl.carousel.min.js"></script>
 
-        <!-- Template Main JS File -->
         <script src="../assets/js/main.js"></script>
         <script src="../assets/js/chatbot.js"></script>
-        <script src="./app.js"></script>
 
         <!-- Floating Social Media Sidebar -->
         <div class="floating-social">
@@ -354,8 +561,8 @@
                 target="_blank"><i class="bx bxl-youtube"></i></a>
             <a href="https://www.linkedin.com/in/chittukuruvigal-arakkattalai-7a1961170/"
                 class="floating-social-icon linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>
-            <a href="https://whatsapp.com/channel/0029VbC4dxiAjPXHfkpdMX3k" class="floating-social-icon whatsapp"
-                target="_blank"><i class="bx bxl-whatsapp"></i></a>
+            <a href="https://whatsapp.com/channel/0029VbC4dxiAjPXHfkpdMX3k" target="_blank"
+                class="floating-social-icon whatsapp"><i class="bx bxl-whatsapp"></i></a>
             <a href="https://g.page/r/CWOvKVslwzIMEBM/review" class="floating-social-icon google" target="_blank"><i
                     class="bx bxl-google"></i></a>
         </div>
