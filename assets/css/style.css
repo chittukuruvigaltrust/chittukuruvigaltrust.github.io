@@ -684,7 +684,7 @@ section {
 }
 
 .about .video-box {
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/_about.png") center center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/about-img.png") center center no-repeat;
   background-size: cover;
   min-height: 400px;
   border-radius: 20px;
