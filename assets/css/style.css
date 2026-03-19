@@ -248,7 +248,7 @@ h6 {
 
 .nav-menu .btn-order-nav a:hover {
   background: #145418;
-    border-color: #145418;
+  border-color: #145418;
 }
 
 @media (max-width: 991px) {
@@ -1389,7 +1389,7 @@ section {
   background-color: #428bca;
   color: #fff;
   padding: 10px;
-  
+
 }
 
 /*--------------------------------------------------------------
@@ -1738,7 +1738,7 @@ section {
 }
 
 .btn-event-pill i {
-  background: #428bca;
+  background: #145418;
   color: #fff;
   width: 28px;
   height: 28px;
@@ -1774,11 +1774,13 @@ section {
 }
 
 .contact-premium-wrapper {
-    background-color: #e0e4e8;
-  /* Deep Dark Navy from Reference */
+  background: linear-gradient(135deg, rgba(108, 181, 113, 0.88) 0%, rgba(99, 146, 103, 0.88) 100%), url('../img/cta-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  /* background-attachment: fixed; */ /* Optional parallax, removed for normal scroll */
   padding: 40px 60px;
-  border-radius: 80px;
-  color: #000;
+  border-radius: 50px;
+  color: #fff;
   box-shadow: 0 25px 60px rgba(0, 0, 0, 0.2);
   position: relative;
   overflow: hidden;
@@ -1787,8 +1789,9 @@ section {
 .contact-premium-wrapper .badge-pill {
   display: inline-block;
   padding: 8px 20px;
-  background: #145418;
-  border: 1px solid #145418;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(5px);
   border-radius: 50px;
   font-size: 13px;
   font-weight: 600;
@@ -1800,17 +1803,17 @@ section {
   font-size: 48px;
   font-weight: 700;
   margin-bottom: 20px;
-  color: #000;
+  color: #fff;
 }
 
 .contact-header p {
   font-size: 18px;
-  color: #000;
+  color: #f1f8f1;
   margin-bottom: 60px;
 }
 
 .contact-header p a {
-  color: #145418;
+  color: #ffd54f; /* Yellow accent to stand out against green */
   text-decoration: none;
   font-weight: 600;
 }
@@ -1827,28 +1830,28 @@ section {
 .contact-icon-mini {
   width: 40px;
   height: 40px;
-  background: #145418;
-  /* Website Trust Blue */
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 8px;
-  /* Slightly rounded as in reference */
   font-size: 20px;
   margin-bottom: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .contact-item h4 {
   font-size: 20px;
   font-weight: 700;
-  color: #000;
+  color: #fff;
   margin-bottom: 10px;
 }
 
 .contact-item .subtext {
   font-size: 15px;
-  color: #000;
+  color: #e8f5e9; /* Very light green tinted white */
   margin-bottom: 15px;
   display: block;
 }
@@ -1856,13 +1859,13 @@ section {
 .contact-item .detail {
   font-size: 16px;
   font-weight: 600;
-  color: #000;
+  color: #ffd54f; /* Yellow accent */
   text-decoration: none !important;
   transition: color 0.3s ease;
 }
 
 .contact-item .detail:hover {
-  color: #428bca;
+  color: #ffca28;
 }
 
 @media (max-width: 991px) {
@@ -2361,9 +2364,11 @@ section {
 .floating-social-icon.linkedin {
   background: #0077b5;
 }
-.floating-social-icon.google { 
-  background: #4097e3; 
+
+.floating-social-icon.google {
+  background: #4097e3;
 }
+
 .floating-social-icon.whatsapp {
   background: #25d366;
 }
@@ -2398,5 +2403,289 @@ section {
   .floating-social-icon {
     height: 45px;
     font-size: 18px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Mailing List
+--------------------------------------------------------------*/
+.mailing-list {
+  padding: 60px 0;
+  background: linear-gradient(135deg, #6cb571 0%, #639267 100%);
+}
+
+.mailing-wrapper {
+  background: #fff;
+  border-radius: 60px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+  padding: 25px 40px;
+  position: relative;
+  z-index: 1;
+}
+
+.mailing-icon {
+  position: absolute;
+  left: -30px;
+  top: -45px;
+}
+
+.mailing-icon svg {
+  width: 140px;
+  height: 140px;
+}
+
+.mailing-content-area {
+  padding-left: 80px;
+}
+
+.mailing-subtitle {
+  font-size: 15px;
+  color: #555;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  display: block;
+}
+
+.mailing-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #111;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.mailing-form {
+  gap: 20px;
+}
+
+.mailing-input {
+  border: none !important;
+  border-bottom: 1px solid #c2c2c2 !important;
+  border-radius: 0 !important;
+  padding: 5px 0 !important;
+  box-shadow: none !important;
+  font-size: 14px !important;
+  background: transparent !important;
+}
+
+.mailing-input:focus {
+  border-bottom: 1px solid #388e3c !important;
+  outline: none !important;
+}
+
+.mailing-btn {
+  border-radius: 50px !important;
+  background: linear-gradient(135deg, #1b5e20, #2e7d32) !important;
+  color: #fff !important;
+  padding: 10px 30px !important;
+  font-weight: 600 !important;
+  border: none !important;
+  font-size: 14px !important;
+  letter-spacing: 0.5px !important;
+  white-space: nowrap !important;
+  transition: transform 0.2s !important;
+}
+
+.mailing-btn:hover {
+  transform: scale(1.05);
+  color: #fff !important;
+}
+
+@media (max-width: 768px) {
+  .mailing-content-area {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  .mailing-wrapper {
+    border-radius: 30px !important;
+    padding: 25px 20px !important;
+  }
+}
+
+/*--------------------------------------------------------------
+# Custom Tabs (Financials)
+--------------------------------------------------------------*/
+.custom-tabs {
+  border-bottom: none;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  display: inline-flex;
+  padding: 0;
+  overflow: hidden;
+}
+
+.custom-tabs .nav-item {
+  margin-bottom: 0;
+}
+
+.custom-tabs .nav-link {
+  border: none;
+  background-color: transparent;
+  color: #555;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 15px 35px;
+  border-radius: 0;
+  position: relative;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.custom-tabs .nav-link:hover {
+  color: #388e3c;
+  background-color: #ebebeb;
+}
+
+.custom-tabs .nav-link.active {
+  background-color: #fff;
+  color: #111;
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Green Dot Indicator */
+.custom-tabs .active-indicator {
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #388e3c;
+  border-radius: 50%;
+  margin-top: 8px;
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.3s ease;
+}
+
+.custom-tabs .nav-link.active .active-indicator {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/*--------------------------------------------------------------
+# Financials Card Layout
+--------------------------------------------------------------*/
+.report-card {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  padding: 30px 25px;
+  height: 100%;
+  border: 1px solid #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.report-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  border-color: #e8e8e8;
+}
+
+.report-card h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 30px;
+}
+
+.report-card .download-link {
+  color: #388e3c;
+  font-weight: 500;
+  font-size: 15px;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.report-card .download-link:hover {
+  color: #1b5e20;
+}
+
+.report-card .pdf-icon {
+  font-size: 24px;
+  color: #d32f2f;
+}
+
+/* Pagination Styling */
+.custom-pagination {
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.custom-pagination .page-item {
+  list-style: none;
+}
+
+.custom-pagination .page-link {
+  border: none;
+  background: transparent;
+  color: #555;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  padding: 0;
+}
+
+.custom-pagination .page-link:hover {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.custom-pagination .page-item.active .page-link {
+  background: #2e7d32;
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(46, 125, 50, 0.3);
+}
+
+.custom-pagination .page-link.next-link {
+  border-radius: 0;
+  width: auto;
+  padding: 0 10px;
+  font-weight: 500;
+  color: #333;
+}
+
+.custom-pagination .page-link.next-link:hover {
+  background: transparent;
+  color: #2e7d32;
+}
+
+/*--------------------------------------------------------------
+# Heatmap Section
+--------------------------------------------------------------*/
+.heatmap {
+  padding: 80px 0;
+}
+
+#map-container {
+  border-radius: 20px;
+  overflow: hidden;
+  width: 100%;
+  height: 450px;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+  min-height: 450px;
+  background-color: #f5f5f5;
+}
+
+@media (max-width: 768px) {
+  #map-container,
+  #map {
+    height: 320px;
+    min-height: 320px;
   }
 }

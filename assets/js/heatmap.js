@@ -6,7 +6,7 @@
 
 document.addEventListener("DOMContentLoaded", function () {
   const map = L.map("map", {
-    center: [12.5, 78.5],
+  center: [12.5, 78.5],
     zoom: 6,
     scrollWheelZoom: false,
     dragging: true,
@@ -20,6 +20,11 @@ document.addEventListener("DOMContentLoaded", function () {
     attribution: '&copy; <a href="https://carto.com/">CARTO</a>',
     maxZoom: 19,
   }).addTo(map);
+
+  // Force correct size after any AOS/animation delay
+  setTimeout(function () {
+    map.invalidateSize();
+  }, 500);
 
   // Load data and add circles
   loadCircleData(map);
@@ -60,7 +65,7 @@ function addLegend(map) {
 
 async function loadCircleData(map) {
   try {
-    const response = await fetch("./assets/data/heap-map.xlsx");
+    const response = await fetch("./assets/data/heat-map.xlsx");
     const arrayBuffer = await response.arrayBuffer();
     const workbook = XLSX.read(new Uint8Array(arrayBuffer), { type: "array" });
     const sheet = workbook.Sheets[workbook.SheetNames[0]];

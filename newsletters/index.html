@@ -5,9 +5,18 @@
         <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-        <title>Newsletters - Sparrow Trust India</title>
-        <meta content="" name="descriptison" />
-        <meta content="" name="keywords" />
+        <title>Newsletters & Updates | Chittukuruvigal Trust</title>
+        <meta
+            content="Read our latest newsletters, stay updated on our upcoming events, and learn more about our ongoing sparrow conservation projects."
+            name="description" />
+        <meta content="newsletters, updates, events, Chittukuruvigal Trust news, sparrow conservation updates"
+            name="keywords" />
+        <meta property="og:title" content="Newsletters & Updates | Chittukuruvigal Trust" />
+        <meta property="og:description"
+            content="Read our latest newsletters, stay updated on our upcoming events, and learn more about our ongoing sparrow conservation projects." />
+        <meta property="og:image" content="https://chitukuruvigalarakkattalai.com/assets/img/sparrow-1.jpg" />
+        <meta property="og:url" content="https://chitukuruvigalarakkattalai.com/newsletters/" />
+        <meta property="og:type" content="website" />
 
         <!-- Favicons -->
         <link href="../assets/img/favicon.png" rel="icon" />
@@ -34,6 +43,7 @@
         <!-- Template Main CSS File -->
         <link href="../assets/css/style.css" rel="stylesheet">
         <link href="../assets/css/chatbot.css" rel="stylesheet">
+        <link href="../assets/css/audio.css" rel="stylesheet">
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175963273-1"></script>
         <script>
@@ -42,6 +52,45 @@
             gtag('js', new Date());
 
             gtag('config', 'UA-175963273-1');
+        </script>
+        <!-- JSON-LD for AISO & GEO -->
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "NGO",
+          "name": "Chittukuruvigal Trust",
+          "alternateName": "Sparrow Conservation India",
+          "url": "https://chitukuruvigalarakkattalai.com/",
+          "logo": "https://chitukuruvigalarakkattalai.com/assets/img/newlogo.png",
+          "description": "Chittukuruvigal Trust is a dedicated NGO in Coimbatore, India, focused on the conservation of house sparrows and environmental protection.",
+          "foundingDate": "2014",
+          "founder": {
+            "@type": "Person",
+            "name": "N Dhanasekar",
+            "jobTitle": "Founder & Secretary",
+            "description": "A passionate environmentalist for over a decade, sparrow lover, and nature enthusiast."
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Coimbatore",
+            "addressRegion": "Tamil Nadu",
+            "addressCountry": "IN"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+91-78100-58910",
+            "contactType": "customer service",
+            "email": "chittukuruvigaltrust@gmail.com",
+            "availableLanguage": ["English", "Tamil"]
+          },
+          "sameAs": [
+            "https://www.facebook.com/natarajan.dhanasekar",
+            "https://www.instagram.com/chittukuruvigal_dhanasekar/",
+            "https://www.youtube.com/@chitukuruvigalarakkattalai715",
+            "https://www.linkedin.com/in/chittukuruvigal-arakkattalai-7a1961170/",
+            "https://whatsapp.com/channel/0029VbC4dxiAjPXHfkpdMX3k"
+          ]
+        }
         </script>
     </head>
 
@@ -52,11 +101,14 @@
             <div class="container-fluid">
                 <div class="row justify-content-center">
                     <div class="col-xl-10 d-flex align-items-center justify-content-end">
-                        <h1 class="logo mr-auto d-block d-lg-none">
-                            <a href="../" class="logo mr-auto"><img src="../assets/img/newlogo.png" alt=""
-                                    class="img-fluid"></a>
+                        <h1 class="logo mr-auto d-block d-lg-none" style="font-size: 1.2rem; margin: 0;">
+                            <a href="index.html" class="logo mr-auto d-flex align-items-center"
+                                style="text-decoration: none;">
+                                <img src="assets/img/newlogo.png" alt="Sparrow Trust India" class="img-fluid mr-2"
+                                    style="max-height: 45px;" />
+                                <span style=" font-weight: 700;">Chittukuruvigal Trust</span>
+                            </a>
                         </h1>
-
                         <nav class="nav-menu d-none d-lg-block">
                             <ul>
                                 <li><a href="../">Home</a></li>
@@ -64,7 +116,7 @@
                                 <li><a href="../#about">About Us</a></li>
                                 <li class="active"><a href="../newsletters/">Newsletter</a></li>
                                 <li><a href="../team/">Our Team</a></li>
-                                <li><a href="../financials/">Financials</a></li>
+                                <!-- <li><a href="../financials/">Financials</a></li> -->
                                 <!-- <li><a href="https://chitukuruvigal-arakkattalai.business.site/" target="_blank">Blog</a></li> -->
                                 <li>
                                     <a href="https://docs.google.com/spreadsheets/d/11DtFLqvT1MElvYi56A-E99IBEqcXago6uTSgImR0QTY/edit?gid=0#gid=0"
@@ -220,111 +272,7 @@
             <i class="bx bx-volume-mute" id="audio-icon"></i>
             <span id="audio-label">🐦 Listen</span>
         </button>
-        <style>
-            #audio-toggle {
-                position: fixed;
-                bottom: 25px;
-                left: 25px;
-                z-index: 996;
-                background: linear-gradient(135deg, #2e7d32, #4caf50);
-                color: #fff;
-                border: none;
-                border-radius: 50px;
-                padding: 10px 18px;
-                font-size: 14px;
-                font-family: 'Open Sans', sans-serif;
-                cursor: pointer;
-                display: flex;
-                align-items: center;
-                gap: 6px;
-                box-shadow: 0 4px 15px rgba(46, 125, 50, 0.4);
-                transition: all 0.3s ease;
-            }
-
-            #audio-toggle:hover {
-                transform: scale(1.05);
-                box-shadow: 0 6px 20px rgba(46, 125, 50, 0.5);
-            }
-
-            #audio-toggle.playing {
-                background: linear-gradient(135deg, #1b5e20, #388e3c);
-                animation: pulse-glow 2s ease-in-out infinite;
-            }
-
-            #audio-toggle i {
-                font-size: 20px;
-            }
-
-            @keyframes pulse-glow {
-
-                0%,
-                100% {
-                    box-shadow: 0 4px 15px rgba(46, 125, 50, 0.4);
-                }
-
-                50% {
-                    box-shadow: 0 4px 25px rgba(76, 175, 80, 0.7);
-                }
-            }
-
-            @media (max-width: 768px) {
-                #audio-toggle {
-                    bottom: 80px;
-                    left: 15px;
-                    padding: 8px 14px;
-                    font-size: 12px;
-                }
-            }
-        </style>
-        <script>
-                // Auto-play audio on first user interaction
-                (function () {
-                    const audio = document.getElementById('sparrow-audio');
-                    const icon = document.getElementById('audio-icon');
-                    const label = document.getElementById('audio-label');
-                    const btn = document.getElementById('audio-toggle');
-                    let started = false;
-
-                    function startAudio() {
-                        if (started) return;
-                        started = true;
-                        audio.volume = 0.3;
-                        audio.play().then(() => {
-                            icon.className = 'bx bx-volume-full';
-                            label.textContent = 'Mute';
-                            btn.classList.add('playing');
-                        }).catch(() => { });
-                        document.removeEventListener('click', startAudio);
-                        document.removeEventListener('scroll', startAudio);
-                        document.removeEventListener('keydown', startAudio);
-                        document.removeEventListener('touchstart', startAudio);
-                    }
-
-                    document.addEventListener('click', startAudio);
-                    document.addEventListener('scroll', startAudio);
-                    document.addEventListener('keydown', startAudio);
-                    document.addEventListener('touchstart', startAudio);
-                })();
-
-            function toggleAudio() {
-                const audio = document.getElementById('sparrow-audio');
-                const icon = document.getElementById('audio-icon');
-                const label = document.getElementById('audio-label');
-                const btn = document.getElementById('audio-toggle');
-                if (audio.paused) {
-                    audio.volume = 0.3;
-                    audio.play();
-                    icon.className = 'bx bx-volume-full';
-                    label.textContent = 'Mute';
-                    btn.classList.add('playing');
-                } else {
-                    audio.pause();
-                    icon.className = 'bx bx-volume-mute';
-                    label.textContent = '🐦 Listen';
-                    btn.classList.remove('playing');
-                }
-            }
-        </script>
+        <script src="../assets/js/audio.js"></script>
 
         <!-- Top icon -->
         <a href="#home" class="back-to-top"><i class="icofont-simple-up"></i></a>
@@ -356,8 +304,6 @@
                 class="floating-social-icon linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>
             <a href="https://whatsapp.com/channel/0029VbC4dxiAjPXHfkpdMX3k" class="floating-social-icon whatsapp"
                 target="_blank"><i class="bx bxl-whatsapp"></i></a>
-            <a href="https://g.page/r/CWOvKVslwzIMEBM/review" class="floating-social-icon google" target="_blank"><i
-                    class="bx bxl-google"></i></a>
         </div>
     </body>
 
