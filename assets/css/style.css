@@ -2662,6 +2662,92 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Works Section
+--------------------------------------------------------------*/
+section#works {
+  padding: 60px 0 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+.works-container {
+  position: relative;
+  overflow: hidden;
+}
+
+#works-list {
+  overflow: hidden;
+}
+
+#works-list .col-lg-3,
+#works-list .col-md-4,
+#works-list [class*="col-"] {
+  margin-bottom: 20px;
+}
+
+#works-list .works-wrap {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+#works-list .works-wrap img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+#works-list .works-wrap:hover img {
+  transform: scale(1.05);
+}
+
+#works-list .works-wrap .works-info {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: flex-end;
+  padding: 15px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#works-list .works-wrap:hover .works-info {
+  opacity: 1;
+}
+
+#works-flters {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#works-flters li {
+  cursor: pointer;
+  padding: 6px 20px;
+  border-radius: 50px;
+  background: #e8f5e9;
+  color: #388e3c;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+#works-flters li.filter-active,
+#works-flters li:hover {
+  background: #388e3c;
+  color: #fff;
+}
+
+
+/*--------------------------------------------------------------
 # Heatmap Section
 --------------------------------------------------------------*/
 .heatmap {
