@@ -167,16 +167,27 @@
     autoplay: true,
     dots: true,
     loop: true,
-    margin: 50,
+    margin: 24,
     responsive: {
       0: {
-        items: 2
+        items: 2,
+        margin: 16
+      },
+      576: {
+        items: 3,
+        margin: 20
       },
       768: {
-        items: 4
+        items: 4,
+        margin: 28
       },
-      900: {
-        items: 6
+      992: {
+        items: 5,
+        margin: 36
+      },
+      1200: {
+        items: 6,
+        margin: 40
       }
     }
   });

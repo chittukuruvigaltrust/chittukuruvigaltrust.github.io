@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "முனைவர் எச்.எச்.சாந்தலிங்க மருதாசல அடிகளார்",
+    "quote": "சிட்டுக்குருவிகளை காப்பாற்றும் பணியில் மட்டுமில்ல ஆர்வத்துடன் தொண்டாற்றி வாழ்க",
+    "role": "பேரூர்",
+    "image": "assets/img/testimonials/Santalinga.jpeg"
+  },
+  {
+    "id": 5,
+    "name": "முத்தமிழ்செல்வன்",
+    "quote": "காலையிலும் மாலையிலும் கரண்டு கம்பிகளில் துள்ளிக் குதிக்கும் பிள்ளை குருவி,\nஇளம் காலை வேளையில்\nஇதயம் குளிர இன்னிசை பாடும் இனிய சிட்டு.\nஇதன் தேவை இன்னும் வேண்டும்.\nஇந்த சேவை இணையிலா தொண்டு.\nநீடு வாழ்க",
+    "role": "காவல் ஆய்வாளர், சரணம்பட்டி காவல் நிலையம், கோவை நகர்",
+    "image": "assets/img/testimonials/no-image.jpg"
+  },
+  {
+    "id": 4,
+    "name": "G K Ananthkumar",
+    "quote": "I extend my best wishes for the continued growth and success of the Chittukuruvigal Arakkattalai.",
+    "role": "Head Master, Corporation High School, Ramakrishnapuram.",
+    "image": "assets/img/testimonials/Ananthkumar.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Thiru. I. Anwardeen, IFS",
+    "quote": "Best Wishes for your excellent work",
+    "role": "Principal Chief Conservator of Forests (Research and Education), Chennai",
+    "image": "assets/img/testimonials/Anwardeen.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Dr. K. Senthil Ganesh",
+    "quote": "Wishing the Chittukuruvigal Arakkattalai continued growth, success, and impactful service to society",
+    "role": "Managing Trustee, RVS Educational Institutions, Sulur, Coimbatore",
+    "image": "assets/img/testimonials/SenthilGanesh.jpeg"
+  },
+  {
+    "id": 6,
+    "name": "N. Kanagaraj",
+    "quote": "Best wishes for the continued progress and excellence of the Chittukuruvigal Arakkattalai",
+    "role": "Sub Inspector of Police, Traffic, Saravanamapatti",
+    "image": "assets/img/testimonials/Kanagaraj.jpg"
+  }
+]

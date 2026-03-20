@@ -54,13 +54,36 @@ document.addEventListener('DOMContentLoaded', () => {
     const sendBtn = document.getElementById('send-btn');
     const messagesContainer = document.getElementById('chatbot-messages');
 
-    // Toggle Chat Window
+    // Always open on load. User can manually close with the "×" button.
+    // Hide the round chatbot button while the window is open.
+    chatbotWindow.classList.add('active');
+    // Keep the button's box size so the window positioning (bottom:80px) stays correct.
+    if (chatbotBtn) {
+        chatbotBtn.style.visibility = 'hidden';
+        chatbotBtn.style.pointerEvents = 'none';
+        chatbotBtn.style.opacity = '0';
+    }
+
+    // Only allow opening the chatbot when it's currently closed.
     chatbotBtn.addEventListener('click', () => {
-        chatbotWindow.classList.toggle('active');
+        if (!chatbotWindow.classList.contains('active')) {
+            chatbotWindow.classList.add('active');
+            if (chatbotBtn) {
+                chatbotBtn.style.visibility = 'hidden';
+                chatbotBtn.style.pointerEvents = 'none';
+                chatbotBtn.style.opacity = '0';
+            }
+        }
     });
 
     closeBtn.addEventListener('click', () => {
         chatbotWindow.classList.remove('active');
+        // Show the round button again so user can reopen manually.
+        if (chatbotBtn) {
+            chatbotBtn.style.visibility = '';
+            chatbotBtn.style.pointerEvents = '';
+            chatbotBtn.style.opacity = '';
+        }
     });
 
     // Quick reply buttons

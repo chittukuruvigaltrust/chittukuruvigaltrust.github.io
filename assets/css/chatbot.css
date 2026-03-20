@@ -5,6 +5,8 @@
     right: 80px;
     z-index: 9999;
     font-family: 'Poppins', sans-serif;
+    width: 60px;
+    height: 60px;
 }
 
 #chatbot-button {
@@ -177,5 +179,12 @@
     #chatbot-widget {
         bottom: 70px;
         right: 15px;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 481px) {
+    #chatbot-window {
+        width: 330px;
+        height: 450px;
     }
 }
