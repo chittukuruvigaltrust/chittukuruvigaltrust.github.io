@@ -3,9 +3,30 @@ document.addEventListener('DOMContentLoaded', function() {
   var btn = document.getElementById('subscribeBtn');
   var msg = document.getElementById('subscribeMsg');
 
+  function pad2(n) {
+    return String(n).padStart(2, '0');
+  }
+
+  function formatDDMMYYYY_HHMM(d) {
+    // Use local time so it matches user expectations.
+    var dd = pad2(d.getDate());
+    var mm = pad2(d.getMonth() + 1);
+    var yyyy = d.getFullYear();
+    var hh = pad2(d.getHours());
+    var min = pad2(d.getMinutes());
+    return dd + '/' + mm + '/' + yyyy + ' ' + hh + ':' + min;
+  }
+
   if(form) {
     form.addEventListener('submit', function(e) {
       e.preventDefault();
+
+      // Add timestamp to the hidden subject before submitting.
+      var subjectInput = form.querySelector('input[name="_subject"]');
+      if (subjectInput) {
+        subjectInput.value = 'New Mailing List Subscription! ' + formatDDMMYYYY_HHMM(new Date());
+      }
+
       btn.innerHTML = 'Sending...';
       btn.disabled = true;
       msg.style.display = 'none';
